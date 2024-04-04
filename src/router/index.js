@@ -1,23 +1,78 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-
+import etudiant from '../views/Etudiant.vue'
+import enseignant from '../views/Enseignant.vue'
+import Administrateur from '@/views/Administrateur.vue'
+import planning from '../views/Planning.vue'
+import Gestioncomptes from '../views/gestioncomptes.vue'
+import Informations from '@/views/Informations.vue'
+import lance from '@/views/LancePlatforme.vue'
+import themes from '@/views/themes.vue'
+import Nondisponibilite from '@/views/nondisponibilite.vue'
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/home',
     name: 'home',
     component: HomeView
   },
-  {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
+
+   {
+    path: '/etudiant',
+    name: 'EtudiantComponent',
+    component: etudiant
+  },
+   {
+    path: '/enseignant',
+    name: 'EnseignantComponent',
+    component: enseignant
+  },
+   
+   {
+    path: '/administrateur',
+    name: 'administrateurComponent',
+    component: Administrateur
+  },
+   
+    {
+    path: '/planning',
+    name: 'planningComponent',
+    component: planning
+  },
+    
+     {
+    path: '/gestioncomptes',
+    name: 'comptesComponent',
+    component: Gestioncomptes
+  },
+     
+      {
+    path: '/Informations',
+    name: 'InformationsComponent',
+    component:Informations
+  },
+  
+      {
+    path: '/lance',
+    name: 'lanceComponent',
+    component: lance,
+  },
+      
+        {
+    path: '/themes',
+    name: 'themesComponent',
+    component: themes,
+  },
+        
+         {
+    path: '/nondispo',
+    name: 'nondispoComponent',
+    component: Nondisponibilite,
+  },
+  
+  
 ]
 
 const router = new VueRouter({
