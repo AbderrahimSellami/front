@@ -3,7 +3,8 @@
         <b-container>
             <b-navbar toggleable="sm" variant="secondary">
                 <b-navbar-brand class="mb-2" href="/planning"> Planning</b-navbar-brand>
-                <b-navbar-brand class="mb-2" href="/nondisponibilité'"> Saisir la non Disponibilité</b-navbar-brand>
+                <b-navbar-brand class="mb-2" href="/nondispo"> Saisir la non Disponibilité</b-navbar-brand>
+                <b-navbar-brand class="mb-2" href="/listebinomes"> liste des binomes </b-navbar-brand>
 
 
                 <b-navbar-nav type="dark" class="ml-auto">
@@ -36,11 +37,10 @@
                 </b-table>
             </div>
             <b-button variant="primary" size="lg" class="mr-1" @click="proposer()"> Proposer un Thème </b-button>
-            <b-modal id="modal-1" v-model="modal" ref="modal" size="lg" title="Proposer un Thème"
-                @show="resetModal" @hidden="resetModal" @ok="handleOk" header-bg-variant="primary"
-                header-text-variant="light">
+            <b-modal id="modal-1" v-model="modal" ref="modal" size="lg" title="Proposer un Thème" @show="resetModal"
+                @hidden="resetModal" @ok="handleOk" header-bg-variant="primary" header-text-variant="light">
             </b-modal>
-                
+
         </b-container>
     </b-form>
 </template>

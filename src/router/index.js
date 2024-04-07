@@ -10,12 +10,13 @@ import Informations from '@/views/Informations.vue'
 import lance from '@/views/LancePlatforme.vue'
 import themes from '@/views/themes.vue'
 import Nondisponibilite from '@/views/nondisponibilite.vue'
+import listedesbinomes from '../views/listedesbinomes.vue'
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/home',
-    name: 'home',
+    name: 'homeComponent',
     component: HomeView
   },
 
@@ -70,6 +71,12 @@ const routes = [
     path: '/nondispo',
     name: 'nondispoComponent',
     component: Nondisponibilite,
+  },
+
+     {
+    path: '/listebinomes',
+    name: 'listeComponent',
+    component: listedesbinomes,
   },
   
   
