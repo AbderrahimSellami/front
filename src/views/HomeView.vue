@@ -86,14 +86,14 @@ export default {
             break;
           case 'teacher':
             if (data.AuthTeacher === "OK") {
-              this.$router.push('/teacher');
+              this.$router.push('/enseignant');
             } else {
               alert('Authentification enseignant échouée');
             }
             break;
           case 'student':
             if (data.AuthStudent === "OK") {
-              this.$router.push('/student');
+              this.$router.push('/etudiant');
             } else {
               alert('Authentification étudiant échouée');
             }
