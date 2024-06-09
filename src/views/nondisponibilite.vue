@@ -74,7 +74,7 @@
           })
           .then(data => {
             this.nonDispos.push({
-              id: data.id, // Assurez-vous de récupérer l'ID de la réponse
+              id: data.id, 
               date: this.newNonDispo.date,
               heure: this.newNonDispo.heure
             });
