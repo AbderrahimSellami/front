@@ -79,7 +79,7 @@ export default {
         switch (formData.userType) {
           case 'admin':
             if (data.AuthAdmin === "OK") {
-              this.$router.push('/admin');
+              this.$router.push('/administrateur');
             } else {
               alert('Authentification administrateur échouée');
             }
