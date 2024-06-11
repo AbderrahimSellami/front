@@ -70,7 +70,7 @@ export default {
     fetchThemes() {
       fetch('http://127.0.0.1:8000/enseignant/liste-themes/')
         .then(response => response.json())
-        .then(data => {
+        .then(data => { 
           this.thèmes = data.themes;
         })
         .catch(error => {
